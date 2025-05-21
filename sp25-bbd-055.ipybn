@@ -1,0 +1,812 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "1b304029",
+   "metadata": {},
+   "source": [
+    "# Name = Muhammad Abusufyan"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "66502096",
+   "metadata": {},
+   "source": [
+    "# ID = SP25-BBD-055"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "d6935908",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 01"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "3b203095",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello, Python Learner!\n"
+     ]
+    }
+   ],
+   "source": [
+    "def say_hello():\n",
+    "    print(\"Hello, Python Learner!\")\n",
+    "\n",
+    "say_hello()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "68539e78",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 02"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "9d590181",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello, Ali! Welcome to Python learning.\n"
+     ]
+    }
+   ],
+   "source": [
+    "def greet_user(name):\n",
+    "    print(f\"Hello, {name}! Welcome to Python learning.\")\n",
+    "greet_user(\"Ali\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "3201e85e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 03"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "4892a876",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "I have a dog.\n",
+      "My dog's name is Buddy.\n",
+      "\n",
+      "I have a cat.\n",
+      "My cat's name is Whiskers.\n",
+      "\n",
+      "I have a parrot.\n",
+      "My parrot's name is Rio.\n"
+     ]
+    }
+   ],
+   "source": [
+    "def describe_pet(animal_type, pet_name):\n",
+    "    print(f\"\\nI have a {animal_type}.\")\n",
+    "    print(f\"My {animal_type}'s name is {pet_name.title()}.\")\n",
+    "describe_pet('dog', 'buddy')\n",
+    "describe_pet(animal_type='cat', pet_name='whiskers')\n",
+    "describe_pet('parrot', pet_name='rio')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "eb607763",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 04"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "785ff51a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "I have a dog.\n",
+      "My dog's name is Rocky.\n",
+      "\n",
+      "I have a cat.\n",
+      "My cat's name is Mimi.\n"
+     ]
+    }
+   ],
+   "source": [
+    "def describe_pet(pet_name, animal_type='dog'):\n",
+    "    print(f\"\\nI have a {animal_type}.\")\n",
+    "    print(f\"My {animal_type}'s name is {pet_name.title()}.\")\n",
+    "describe_pet('rocky')\n",
+    "describe_pet('mimi', animal_type='cat')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "acc08757",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 05"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "0e59f2f4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Muhammad Abusufyan\n"
+     ]
+    }
+   ],
+   "source": [
+    "def get_formatted_name(first, last):\n",
+    "    full_name = f\"{first} {last}\"\n",
+    "    return full_name.title()\n",
+    "name = get_formatted_name('Muhammad', 'Abusufyan')\n",
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "389167cf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 06"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "592854df",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ali Ahmed Khan\n",
+      "Ali Khan\n"
+     ]
+    }
+   ],
+   "source": [
+    "def get_formatted_name(first, last, middle=''):\n",
+    "    if middle:\n",
+    "        full_name = f\"{first} {middle} {last}\"\n",
+    "    else:\n",
+    "        full_name = f\"{first} {last}\"\n",
+    "    return full_name.title()\n",
+    "name = get_formatted_name('ali', 'khan', 'ahmed')\n",
+    "print(name)\n",
+    "name = get_formatted_name('ali', 'khan')\n",
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "7182eb20",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 07"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "dc7f05fb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'first': 'ali', 'last': 'khan', 'age': 25}\n",
+      "{'first': 'sara', 'last': 'ahmed'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "def build_person(first, last, age=None):\n",
+    "    person = {\n",
+    "        'first': first,\n",
+    "        'last': last\n",
+    "    }\n",
+    "    if age is not None:\n",
+    "        person['age'] = age\n",
+    "    return person\n",
+    "person_info = build_person('ali', 'khan', age=25)\n",
+    "print(person_info)\n",
+    "person_info = build_person('sara', 'ahmed')\n",
+    "print(person_info)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "4514fb25",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 08"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "03b7c424",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello, Ali!\n",
+      "Hello, Sara!\n",
+      "Hello, Hamza!\n"
+     ]
+    }
+   ],
+   "source": [
+    "def greet_users(usernames):\n",
+    "    for name in usernames:\n",
+    "        print(f\"Hello, {name.title()}!\")\n",
+    "usernames = ['ali', 'sara', 'hamza']\n",
+    "greet_users(usernames)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "5cc39dd2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 09"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "d3bb591a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Making a pizza with the following toppings:\n",
+      "- pepperoni\n",
+      "- mushrooms\n",
+      "- extra cheese\n"
+     ]
+    }
+   ],
+   "source": [
+    "def make_pizza(*toppings):\n",
+    "    print(\"\\nMaking a pizza with the following toppings:\")\n",
+    "    for topping in toppings:\n",
+    "        print(f\"- {topping}\")\n",
+    "make_pizza('pepperoni', 'mushrooms', 'extra cheese')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "38df29a4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Question no 10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "412a738e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'first_name': 'ali', 'last_name': 'khan', 'location': 'karachi', 'field': 'computer science'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "def build_profile(first, last, **info):\n",
+    "    profile = {\n",
+    "        'first_name': first,\n",
+    "        'last_name': last\n",
+    "    }\n",
+    "    profile.update(info)\n",
+    "    return profile\n",
+    "user_profile = build_profile('ali', 'khan', location='karachi', field='computer science')\n",
+    "print(user_profile)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ce7cafd7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "85e308d0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "118c9a22",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "90d583dd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d5d9bc77",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5c548252",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f4fae91",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "84c30da6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "06707354",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "85323b20",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6e669334",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "314fcec2",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "91268ae7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc06fe36",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8d46cb5e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "81c5be16",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a0440821",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "119719a0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2a24ae83",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7cab33d0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "97f6f672",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c5ec9154",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc1e6349",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "361def26",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "60998623",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c0bab3e3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5c0c4d4c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "73e5efba",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e5463336",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d2d3d80c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "833c8b4b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d4d57e49",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d1480337",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e0431791",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "44a78235",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d5ae1aba",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "24009067",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "47772b14",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "24342f62",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c25ce095",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8190dae5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1a0d16bd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a6b02c0a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f3168f93",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "190b58ac",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cf62c6d2",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "22a722b5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a3b65955",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "086895f7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d79d679f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d1d4236d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "065a894c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
